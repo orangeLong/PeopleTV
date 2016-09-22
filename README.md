@@ -1,2 +1,2 @@
-# PeopleTV
+# PeopleSwift
 PeopleTVBySwift

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="XCategoryReusableView" customModule="PeopleSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLB-cp-9tk">
+                    <rect key="frame" x="0.0" y="10" width="5" height="10"/>
+                    <color key="backgroundColor" red="0.98979749177631526" green="0.52898848684210531" blue="0.46810752467105265" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="j8A-16-ctk"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsY-jw-qmS">
+                    <rect key="frame" x="270" y="0.0" width="50" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Xf0-Zv-LAF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="瞅瞅">
+                        <color key="titleColor" red="0.93194901315789469" green="0.52898848684210531" blue="0.46810752467105265" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="IK8-2f-SAI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSD-hm-bxF">
+                    <rect key="frame" x="13" y="0.0" width="125" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="xV5-gg-dhV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NsY-jw-qmS" secondAttribute="trailing" id="BTE-uJ-EKa"/>
+                <constraint firstAttribute="bottom" secondItem="hLB-cp-9tk" secondAttribute="bottom" constant="10" id="FF3-TE-Ywu"/>
+                <constraint firstItem="KSD-hm-bxF" firstAttribute="leading" secondItem="hLB-cp-9tk" secondAttribute="trailing" constant="8" id="IxD-sk-DKW"/>
+                <constraint firstItem="KSD-hm-bxF" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Mnv-Fh-YAC"/>
+                <constraint firstItem="hLB-cp-9tk" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="P3d-wC-ycm"/>
+                <constraint firstAttribute="bottom" secondItem="NsY-jw-qmS" secondAttribute="bottom" id="XnH-iF-BVL"/>
+                <constraint firstItem="NsY-jw-qmS" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="o9R-v1-bWx"/>
+                <constraint firstItem="hLB-cp-9tk" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="sJl-hq-AZv"/>
+                <constraint firstAttribute="bottom" secondItem="KSD-hm-bxF" secondAttribute="bottom" id="ui6-rN-ecu"/>
+            </constraints>
+            <connections>
+                <outlet property="categoryButton" destination="NsY-jw-qmS" id="smb-Lw-SnI"/>
+                <outlet property="categoryTitle" destination="KSD-hm-bxF" id="IMh-oP-Ts0"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
